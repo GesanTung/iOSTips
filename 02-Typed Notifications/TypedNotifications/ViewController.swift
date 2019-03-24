@@ -19,20 +19,18 @@ class ViewController: UIViewController {
 
 
 
-        notificationHolder = CommentChangeNotification.registerObserver { (info) in
-            print(info.newsId)
-            print(info.comment)
-        }
+notificationHolder = CommentChangeNotification.registerObserver { (info) in
+    print(info.newsId)
+    print(info.comment)
+}
 
-//        notificationHolder1 = NotificationCenter.default.addObserver(forName: NSNotification.Name.init(rawValue: "com.notification.comment"), object: nil, queue: nil) { (notification) in
-//            guard let userInfo = notification.userInfo as? [String:Any],
-//                let newsId = userInfo["newsId"] as? Int,
-//                let comment = userInfo["comment"] as? Int else {
-//                    return
-//            }
-//            print(newsId)
-//            print(comment)
-//        }
+notificationHolder1 = NotificationCenter.default.addObserver(forName: NSNotification.Name.init(rawValue: "com.notification.comment"), object: nil, queue: nil) { (notification) in
+    guard let userInfo = notification.userInfo as? [String:Any] else { return }
+    guard let newsId = userInfo["newsId"] as? Int else { return }
+    guard let comment = userInfo["comment"] as? Int else { return }
+    print(newsId)
+    print(comment)
+}
     }
 
     @IBAction func doPost(_ sender: Any) {
