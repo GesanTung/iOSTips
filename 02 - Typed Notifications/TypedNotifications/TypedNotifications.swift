@@ -53,12 +53,10 @@ extension NotificationDecodable {
 typealias NotificationProtocol = NotificationDescriptor & NotificationDecodable
 
 protocol TypedNotification : NotificationProtocol {
-    @discardableResult
     static func registerObserver(using block: @escaping (Self) -> Swift.Void) -> NotificationToken
 }
 
 extension TypedNotification {
-    @discardableResult
     static func registerObserver(using block: @escaping (Self) -> Swift.Void) -> NotificationToken {
         return self.observer(on: NotificationCenter.default, for: Self.name, using: block)
     }

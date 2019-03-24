@@ -15,9 +15,8 @@ struct Comment {
 
 struct CommentChangeNotification: TypedNotification {
 
-
     static var name: Notification.Name {
-        return "comment"
+        return "com.notification.comment"
     }
 
     let newsId: Int
