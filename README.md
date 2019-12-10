@@ -3,3 +3,7 @@
   
  
    [02 倔强青铜：如何避免写出丑陋的通知代码](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NzE0NQ==&mid=2247484303&idx=1&sn=f62dee7dc4e8b9253a0ed38e7a4c6c61&chksm=a6f95969918ed07f5949059c012fca28e59480f59b47ce25ed2ac95cecbc4df80c7c38be2194&mpshare=1&scene=23&srcid=#rd)
+   
+   [03 最佳实践：优雅的使用 UserDefaults](http://mp.weixin.qq.com/s?__biz=MjM5NTQ2NzE0NQ==&mid=2247484303&idx=1&sn=f62dee7dc4e8b9253a0ed38e7a4c6c61&chksm=a6f95969918ed07f5949059c012fca28e59480f59b47ce25ed2ac95cecbc4df80c7c38be2194&mpshare=1&scene=23&srcid=#rd)
+
+
