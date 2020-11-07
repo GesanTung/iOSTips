@@ -1,0 +1,22 @@
+
+{
+    "version":"1.0.0"
+    "packages":[
+        {
+            "id":"5213aadadadadada",
+            "name":"pool",
+            "version":"0.0.1",
+            "isPatch": false,
+            "md5":""
+            "url":""
+        },
+        {
+            "id":"5213aadadadadada",
+            "name":"kumex",
+            "version":"0.0.1",
+            "isPatch": false,
+            "md5":""
+            "url":""
+        }
+    ]
+}
