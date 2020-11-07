@@ -16,9 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
-       var storage = Storage()
+        UserDefaults.standard.set("this is iOSTips", forKey: "title")
+        UserDefaults.standard.synchronize()
 
-       observation = storage.$isFirstLaunch.observe { old, new in
+        let title = UserDefaults.standard.object(forKey: "title") as? String
+
+        var storage = Storage()
+
+        observation = storage.$isFirstLaunch.observe { old, new in
             print(old, new)
         }
 
